@@ -227,8 +227,8 @@ template <int dim>
 void Step6<dim>::output_results(const unsigned int cycle) const {
 	{
 		GridOut grid_out;
-		std::ofstream output("grid-" + std::to_string(cycle) + "-" + std::to_string(dim) + ".eps");
-		grid_out.write_eps(triangulation, output);
+		std::ofstream output("grid-" + std::to_string(cycle) + "-" + std::to_string(dim) + ".gpl");
+		grid_out.write_gnuplot(triangulation, output);
 	}
 
 	{
