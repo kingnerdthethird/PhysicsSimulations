@@ -1,0 +1,32 @@
+{
+  "configurations": [
+    {
+      "name": "Linux-Debug",
+      "generator": "Unix Makefiles",
+      "remoteMachineName": "localhost",
+      "configurationType": "Debug",
+      "remoteCMakeListsRoot": "/mnt/c/Users/AshSp/Documents/PhysicsSimulations/workspace/step-6/",
+      "cmakeExecutable": "/usr/local/bin/cmake",
+      "buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+      "installRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
+      "remoteBuildRoot": "/mnt/c/Users/AshSp/Documents/PhysicsSimulations/workspace/step-6/build/${name}",
+      "remoteInstallRoot": "/mnt/c/Users/AshSp/Documents/PhysicsSimulations/workspace/step-6/install/${name}",
+      "remoteCopySources": false,
+      "remoteCopySourcesOutputVerbosity": "Normal",
+      "remoteCopySourcesConcurrentCopies": "10",
+      "remoteCopySourcesMethod": "rsync",
+      "remoteCopySourcesExclusionList": [
+        ".vs",
+        ".git"
+      ],
+      "rsyncCommandArgs": "-t --delete --delete-excluded",
+      "remoteCopyBuildOutput": false,
+      "cmakeCommandArgs": "-DDEAL_II_DIR=/usr/include/",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [
+        "linux_x64"
+      ]
+    }
+  ]
+}

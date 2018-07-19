@@ -1,0 +1,17 @@
+{
+      "name": "Linux-Debug",
+      "generator": "Unix Makefiles",
+      "remoteMachineName": "localhost",
+      "configurationType": "Debug",
+      "remoteCMakeListsRoot": "/mnt/c/AshSp/Documents/PhysicsSimulations/workspace/step-6/",
+      "cmakeExecutable": "/usr/local/bin/cmake",
+      "buildRoot": "${env.LOCALAPPDATA}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+      "remoteBuildRoot": "/mnt/c/AshSp/Documents/PhysicsSimulations/workspace/step-6/build/",
+      "remoteCopySources": true,
+      "remoteCopySourcesOutputVerbosity": "Normal",
+      "remoteCopySourcesConcurrentCopies": "10",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "linux-x64" ]
+}
