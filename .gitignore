@@ -15,3 +15,5 @@ obj
 *.eps
 *.ps
 *.svg
+*.vcxproj
+*.vcxproj.user

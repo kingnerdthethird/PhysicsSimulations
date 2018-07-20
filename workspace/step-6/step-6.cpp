@@ -124,7 +124,7 @@ void Step6<dim>::run() {
 		std::cout << "Cycle " << cycle << ":" << std::endl;
 
 		if (cycle == 0) {
-			GridGenerator::hyper_ball(triangulation);
+			GridGenerator::hyper_cube(triangulation, 1, 0.5);
 			triangulation.refine_global(1);
 		}
 
@@ -227,8 +227,8 @@ template <int dim>
 void Step6<dim>::output_results(const unsigned int cycle) const {
 	{
 		GridOut grid_out;
-		std::ofstream output("grid-" + std::to_string(cycle) + "-" + std::to_string(dim) + ".gpl");
-		grid_out.write_gnuplot(triangulation, output);
+		std::ofstream output("grid-" + std::to_string(cycle) + "-" + std::to_string(dim) + ".vtk");
+		grid_out.write_vtk(triangulation, output);
 	}
 
 	{
