@@ -1,7 +1,6 @@
 SET(TARGET "step-7")
 
-SET(TARGET_SRC ${TARGET}.cpp Step7.cpp)
-SET(API Step7.h)
+SET(TARGET_SRC ${TARGET}.cpp Step7.h Step7.cpp)
 
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8.12)
 

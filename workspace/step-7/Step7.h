@@ -1,3 +1,6 @@
+#ifndef Step7_h
+#define Step7_h
+
 #include <deal.II/base/quadrature_lib.h>
 #include <deal.II/base/function.h>
 #include <deal.II/base/logstream.h>
@@ -49,7 +52,7 @@ namespace Step7 {
 	template <int dim>
 	class Solution : public Function<dim>, protected SolutionBase<dim> {
 	public:
-		Solution() : Function<dim>();
+		Solution();
 		
 		virtual double value(const Point<dim> &p, const unsigned int component = 0) const;
 		virtual Tensor<1, dim> gradient(const Point<dim> &p, const unsigned int component = 0) const;
@@ -58,7 +61,7 @@ namespace Step7 {
 	template <int dim>
 	class RightHandSide : public Function<dim>, protected SolutionBase<dim> {
 	public:
-		RightHandSide() : Function<dim>();
+		RightHandSide();
 
 		virtual double value(const Point<dim> &p, const unsigned int component = 0) const;
 	};
@@ -96,3 +99,5 @@ namespace Step7 {
 		ConvergenceTable convergence_table;
 	};
 }
+
+#endif
